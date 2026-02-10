@@ -79,5 +79,39 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
   * Supports indexing & constraints
 
   * Auto-generated id and created_at fields
+    
+**4.Features**
+
+ * Real-time data synchronization
+
+ * Automated change detection
+  
+ * Secure REST API communication
+  
+ * Structured JSON data transformation
+  
+ * Scalable cloud-based storage
+
+**5.Data Synchronization Workflow**
+
+**Stage 1: Sheet → Database (Push Flow)**
+
+  This process transfers newly added or updated spreadsheet records into Supabase.
+  
+**Steps Involved:**
+
+ * Retrieve data from the active sheet (excluding header row)
+   
+ * Extract only relevant columns (e.g., ID, Name, Dept, Salary, etc.)
+   
+ * Perform field validation (avoid null/empty required values)
+   
+ * Match records using a primary identifier (e.g., email or id)
+   
+ *  Perform upsert operation (insert new / update existing)
+   
+   
+
+   
 
 
