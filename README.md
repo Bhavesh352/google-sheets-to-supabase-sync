@@ -11,7 +11,9 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 What the System Does
 
 Automatically synchronizes data from Google Sheets to a Supabase PostgreSQL database.
+
 Updates the database in real time whenever a row is added or modified in the spreadsheet.
+
 Ensures structured and consistent cloud-based data storage.
 
 How It Works (High-Level)
@@ -23,3 +25,14 @@ Converts spreadsheet rows into structured JSON format.
 Sends the formatted data securely to Supabase using REST API calls.
 
 Inserts or updates records in the PostgreSQL database.
+
+Use Cases
+
+Lead and customer data management
+
+Form submission data storage
+
+Student or employee record management
+
+Inventory and stock tracking
+
