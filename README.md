@@ -38,7 +38,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 
 **3.Tech Stack**
 
-**1.Frontend / Data Source**
+**A.Frontend / Data Source**
 
 * Google Sheets
 
@@ -46,7 +46,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 
   * Acts as a lightweight frontend where users can add, edit, or update records.
 
-**2.Backend Automation**
+**B.Backend Automation**
 
 * Serverless Runtime
 
@@ -58,7 +58,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
    
  * Acts as middleware between Google Sheets and database
 
-**3.API Layer**
+**C.API Layer**
 
 * Supabase REST API
 
@@ -68,7 +68,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 
 * Accepts JSON payloads from Apps Script
 
-**4.Database**
+**D.Database**
 
 * PostgreSQL (via Supabase)
 
