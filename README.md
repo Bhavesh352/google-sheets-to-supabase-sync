@@ -110,8 +110,46 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
    
  *  Perform upsert operation (insert new / update existing)
    
-   
+Stage 2: Database → Sheet (Pull Flow)
 
+   This process ensures the spreadsheet reflects the latest database records.
+
+**Steps Involved:**
+ * Fetch complete dataset from Supabase table
+
+ * Convert JSON response into row format
+
+ * Clear existing sheet data (excluding column headers)
+
+ * Repopulate sheet with latest records
+
+**6.System Security Framework**
+
+**Access & Authentication**
+
+ * Google Service Account with OAuth 2.0 for Sheets access
+
+ * Supabase JWT-based API authentication
+
+ * Role-based credentials for controlled database operations
+   
+**Permission Control**
+
+ * PostgreSQL Row-Level Security (RLS) enabled
+
+ * Direct table writes restricted
+
+ * Updates handled through secured backend logic
+   
+**Data Protection**
+
+* HTTPS (TLS) for all data transfers
+
+* Encrypted storage in Supabase
+
+**8.Conclusion**
+
+This project delivers a secure and efficient two-way synchronization between Google Sheets and Supabase, ensuring real-time data consistency and preventing duplicates through controlled upsert logic.By leveraging automation triggers and secure API communication, it provides a scalable solution that reduces manual effort, improves data accuracy, and strengthens integration between cloud-based tools and modern database systems.
    
 
 
