@@ -10,11 +10,11 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 
 **What the System Does**
 
-*Automatically synchronizes data from Google Sheets to a Supabase PostgreSQL database.
+* Automatically synchronizes data from Google Sheets to a Supabase PostgreSQL database.
 
-*Updates the database in real time whenever a row is added or modified in the spreadsheet.
+-Updates the database in real time whenever a row is added or modified in the spreadsheet.
 
-*Ensures structured and consistent cloud-based data storage.
+-Ensures structured and consistent cloud-based data storage.
 
 **How It Works (High-Level)**
 
