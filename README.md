@@ -35,6 +35,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
 * Student or employee record management
 
 * Inventory and stock tracking
+***
 
 **3.Tech Stack**
 
@@ -79,6 +80,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
   * Supports indexing & constraints
 
   * Auto-generated id and created_at fields
+ ***
     
 **4.Features**
 
@@ -91,6 +93,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
  * Structured JSON data transformation
   
  * Scalable cloud-based storage
+ ***
 
 **5.Data Synchronization Workflow**
 
@@ -110,7 +113,7 @@ Whenever a new row is added or modified in Google Sheets, the system captures th
    
  *  Perform upsert operation (insert new / update existing)
    
-Stage 2: Database → Sheet (Pull Flow)
+**Stage 2: Database → Sheet (Pull Flow)**
 
    This process ensures the spreadsheet reflects the latest database records.
 
@@ -122,6 +125,7 @@ Stage 2: Database → Sheet (Pull Flow)
  * Clear existing sheet data (excluding column headers)
 
  * Repopulate sheet with latest records
+***
 
 **6.System Security Framework**
 
@@ -146,10 +150,12 @@ Stage 2: Database → Sheet (Pull Flow)
 * HTTPS (TLS) for all data transfers
 
 * Encrypted storage in Supabase
+***
 
 **8.Conclusion**
 
 This project delivers a secure and efficient two-way synchronization between Google Sheets and Supabase, ensuring real-time data consistency and preventing duplicates through controlled upsert logic.By leveraging automation triggers and secure API communication, it provides a scalable solution that reduces manual effort, improves data accuracy, and strengthens integration between cloud-based tools and modern database systems.
+***
    
 
 
